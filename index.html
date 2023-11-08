@@ -1,0 +1,124 @@
+<!-- Definición de última versión de HTML a aplicarse en el documento -->
+<!DOCTYPE html>
+
+<!-- Especificación para que el documento esté bajo el estandar de HTML, y definción de idioma -->
+<html lang="es">
+
+    <!-- Espacio de comunicación entre el sitio web y el navegador -->
+    <head>
+        <!-- Especificación de la codificación de caracteres para alfabetos diferentes -->
+        <meta charset="UTF-8">
+
+        <!-- Comportamiento del diseño de páginas frente a distintos tamaños de pantallas y dispositivos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Descripción del contenido de la página --> 
+        <meta name="description" content="Este es mi portafolio personal"> 
+        
+        <!-- Palabras clave para los motores de búsqueda -->
+        <meta name="keywords" content="Portafolio, Diseño Web, Análisis de Datos, Diseño de Videojuegos">
+        
+        <!-- Autor del documento -->
+        <meta name="author" content="Edgardo Nicolás"> 
+            
+        <!-- Indica compatibilidad con versiones antiguas de Internet Explorer -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+        
+        <!-- Enlace de vinculación con la hoja de estilo CSS "reset.css" -->
+        <link rel="stylesheet" href="CSS/reset.css">
+        
+        <!-- Enlace de vincualción con la hoja de estilos externa -->
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Título del documento, para mostrar en la barra de título del navegador -->
+        <title>Portafolio de Alconelubb</title>
+    </head>
+
+    <!-- Contenido visible de la página web -->
+    <body>
+        
+        <!-- Encabezado de la página-->
+        <header>
+           
+            <!-- Título principal del sitio web -->
+            <h1>ALCONELUBBDEV</h1>
+            
+            <!-- Barra de navegación -->
+            <nav>
+                
+                <!-- Contenido de enlaces de navegación organizado en lista no ordenada -->
+                <ul>
+
+                    <!-- Enlace a la página de inicio -->
+                    <li id="inicio"><a href="index.html">Inicio</a></li>
+                    
+                    <!-- Enlace a la página de desarrollo web -->
+                    <li id="desarrollo_web"><a href="pages\desarrolloweb.html">Desarrollo web</a></li>
+                    
+                    <!-- Enlace a la página de analisis de datos -->
+                    <li><a href="#">Análisis de datos</a></li>
+                    
+                    <!-- Enlace a la página de desarrollo de videojuegos -->
+                    <li><a href="#">Desarrollo de videojuegos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido principal del documento -->
+        <main>
+            
+            <!-- Sección de introducción "Sobre mí"-->
+            <section class="intro">
+                
+                <!-- Título de la sección -->
+                <h2 id="titulo"><span id="cursorTitulo" class="cursor"></span></h2>
+                
+                <!-- Descripción del perfil profesional -->
+                <p id="descripcion"><span id="cursorDescripcion" class="cursor"></span></p>
+            </section>
+
+            <section class="contact-form">
+                <h1>¡Dejá tu saludo!</h1>
+                <form class="form" action="">
+                    <label for="firstName" class="first-name">Nombre</label>
+                    <input id="firstName" type="text">
+                
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Contenedor del pie de página -->
+        <footer>
+
+            <!-- Sección de contactos -->
+            <section class = derechos-contactos >
+                <h1>Contacto</h1> 
+
+                <!-- Lista de enlaces de contacto -->
+                <ol>
+                    <!-- Enlace a Instagram -->
+                    <li class="item"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    
+                    <!-- Enlace a Whatsapp -->
+                    <li class="item"><a href="https://web.whatsapp.com/" target="_blank">Whatsapp</a></li>
+                    
+                    <!-- Enlace a LinkedIn -->
+                    <li class="item"><a href="https://ar.linkedin.com/" target="_blank">LinkedIn</a></li>
+                </ol>
+            </section>
+            
+            <!-- Sección de derechos de autor -->
+            <section class = copyright>
+                <p>&copy; 2023 Edgardo Nicolás, López Alcorta</p>
+            </section>
+        </footer>
+    <script src="js/main.js"></script>
+    </body>
+</html>
