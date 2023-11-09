@@ -1,11 +1,11 @@
-/* Se define fuente de texto para el contenido literal del body. Se eliminan márgenes u rellenos del body */
+/* Se define la fuente de texto para el contenido literal del body. Se eliminan los márgenes y rellenos del body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo general para el header o encabezado*/
+/* Estilo general para el encabezado */
 header {
     background-color: rgb(1, 1, 44);
     text-align: center;
@@ -13,7 +13,7 @@ header {
     margin: 0 auto;
 }
 
-/* Estilo para el título del header o encabezado*/
+/* Estilo para el título del encabezado */
 header h1 {
    background-color: rgb(1, 1, 44);
    color: #fff;
@@ -23,12 +23,12 @@ header h1 {
    justify-content: center;
 }
 
-/* Elimina los marcadores de lista predeterminados en el encabezado*/
+/* Elimina los marcadores de lista predeterminados en el encabezado */
 nav ul {
     list-style: none;
 }
 
-/* Aplica estilos a los botones ubicados en el encabezado.*/
+/* Aplica estilos a los botones ubicados en el encabezado */
 nav li {
    display: inline-flex;
    justify-content: center;
@@ -52,13 +52,13 @@ nav li:hover {
    transform: scale(1.05);
 }
 
-/* Define el color del texto y elimia la decoración del enlace*/
+/* Define el color del texto y elimina la decoración del enlace */
 nav a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Se emplea el ancho máximo del elemento main al 100% y se lo centra. */
+/* Se emplea el ancho máximo del elemento main al 100% y se lo centra */
 main { 
     max-width: 100%;
     margin: 0 auto;
@@ -67,7 +67,7 @@ main {
     justify-content: space-between;  
 }
 
-/* Se define el estilo general del título de la descripción del perfil profesional. */
+/* Se define el estilo general del título de la descripción del perfil profesional */
 .intro h2 {
    background-color: black;
    margin: 25px;
@@ -77,7 +77,7 @@ main {
    font-weight: bold; 
 }
  
-/* Se define el estilo general del cuerpo de la descripción del perfil profesional. */
+/* Se define el estilo general del cuerpo de la descripción del perfil profesional */
 .intro {
     background-color: black;
     padding: 20px;
@@ -91,34 +91,33 @@ main {
     overflow: auto; 
 }
 
+/* Estilos para el contenedor del carrusel de imágenes */
 #slideshow-container{
     display:grid;
     justify-content: center;
     background-color: black;
     height: 500px;
     width: 100%;
-   /*  border:5px solid green; */
 }
+
+/* Estilos para el carrusel de imágenes */
 .carousel{
     display:flex;
     position:relative;
-    /* border:5px solid yellow; */
     width:70vw;
     overflow:hidden;
 }
 
+/* Estilos para las diapositivas del carrusel de imágenes */
 #gallery-slides{
     display:flex;
 }
 
-/*gallery animation styling  */
-
-/* currentPos =1, slideIndex=0, animation starts from the slide ahead of the first slide */
+/* Estilos para las animaciones de las diapositivas del carrusel de imágenes */
 @keyframes slide1{
     0%{transform:translateX(-25%)}
     100%{transform:translateX(0%)}
 }
-/* slideleft, moving 25% left */
 @keyframes slideL1{ 
     0%{transform:translateX(0%)}
     100%{transform:translateX(-25%)}
@@ -131,20 +130,14 @@ main {
     0%{transform:translateX(-50%)}
     100%{transform:translateX(-75%)}
 }
-
-/* currentPos=0 , slideIndex=3, moving from first slide to last(4th index) slide */
 @keyframes slideL0{ 
     0%{transform:translateX(0%)}
     100%{transform:translateX(-75%)}
 }
-
- /* currentPos = 3 slideIndex=0, moving from last slide to first(0th index) slide  */
 @keyframes slideR0{ 
     0%{transform:translateX(-75%)}
     100%{transform:translateX(0%)}
 }
-
-/* slideright, moving 25% right */
 @keyframes slideR1{ 
     0%{transform:translateX(-50%)}
     100%{transform:translateX(-25%)}
@@ -157,24 +150,24 @@ main {
     0%{transform:translateX(-100%)}
     100%{transform:translateX(-75%)}
 }
-/* gallery animation styling  */
 
+/* Estilos para las diapositivas del carrusel de imágenes */
 .slides{
     width:70vw;
     height:50vh;
     height: 500px;
 }
 
+/* Estilos para los botones de dirección del carrusel de imágenes */
 .direction-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* border: 1px solid black; */
     position: absolute;
     top: 33vh;
-
 }
 
+/* Estilos para los botones de dirección del carrusel de imágenes */
 .direction{
     display: flex;
     font-size: 30px;
@@ -191,13 +184,12 @@ main {
     color:rgba(255, 255, 255, 0.911);
 }
 
-/* dots */
+/* Estilos para los puntos de control del carrusel de imágenes */
 .controls{
     display: grid;
     grid-template-columns: 10px 10px 10px 10px;
     grid-column-gap: 20px;
     justify-content: center;
-    /* border: 2px solid grey; */
     padding:10px;
 }
 
@@ -210,6 +202,7 @@ main {
     border-color: yellowgreen;
 }
 
+/* Estilos para el formulario de contacto */
 .contact-form{
     background: rgb(1, 1, 44);
     justify-content: center;
@@ -311,6 +304,7 @@ textarea:focus {
     }
 }
 
+/* Estilos para la sección de contacto y el mapa */
 .contact-form, .map-section {
     width: 50%;
 }
@@ -350,7 +344,7 @@ textarea:focus {
     color: white;
 }
 
-/* Aplica formato al título de la sección "contactos".*/
+/* Aplica formato al título de la sección "contactos" */
 .derechos-contactos {
    display: grid;
    grid-template-rows: 1fr;
@@ -358,7 +352,7 @@ textarea:focus {
    background-color: rgb(1, 1, 44);
 }
 
-/* Elimina los marcadores de lista predeterminados en el pie de página*/
+/* Elimina los marcadores de lista predeterminados en el pie de página */
 footer li a {
    text-decoration: none;
    color: white;
@@ -372,70 +366,72 @@ ol {
 
 /* Definen el estilo general para los elementos "link" ubicados en el pie de página */
 .item {
-   background-color: rgb(26, 27, 20);
-   padding: 5px;
-   border-radius: 5px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-   margin: 5px;
-   list-style-type: none;
-}
-
-/* Cambia el color de fondo del elemento "contacto" cuando se pasa el cursor sobre él */
-.item:hover{
-   background-color: rgba(131, 43, 2, 0.705);
-}
-
-/* Definen el estilo general para la seccion "copyright" ubicado al final del pie de página */
-.copyright {
-   text-align: center;
-   color: white;
-   background-color: rgb(1, 1, 44);
-   font-weight: bold;
-   padding: 10px; 
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 18px;
-    }
-    nav li {
-        padding: 15px 30px;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 900px) {
-    .column {
-        flex: 50%;
-    }
-    body {
-        font-size: 16px;
-    }
-    nav li {
-        padding: 10px 20px;
-    }
-}
-
-@media (min-width: 900px) and (max-width: 1200px) {
-    .column {
-        flex: 33.33%;
-    }
-    body {
-        font-size: 14px;
-    }
-    nav li {
-        padding: 8px 16px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .column {
-        flex: 25%;
-    }
-    body {
-        font-size: 12px;
-    }
-    nav li {
-        padding: 5px 10px;
-    }
-}
+    background-color: rgb(26, 27, 20);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    list-style-type: none;
+ }
+ 
+ /* Cambia el color de fondo del elemento "contacto" cuando se pasa el cursor sobre él */
+ .item:hover{
+    background-color: rgba(131, 43, 2, 0.705);
+ }
+ 
+ /* Definen el estilo general para la seccion "copyright" ubicado al final del pie de página */
+ .copyright {
+    text-align: center;
+    color: white;
+    background-color: rgb(1, 1, 44);
+    font-weight: bold;
+    padding: 10px; 
+ }
+ 
+ /* Estilos para diferentes tamaños de pantalla */
+ @media (max-width: 600px) {
+     body {
+         font-size: 18px;
+     }
+     nav li {
+         padding: 15px 30px;
+     }
+ }
+ 
+ @media (min-width: 600px) and (max-width: 900px) {
+     .column {
+         flex: 50%;
+     }
+     body {
+         font-size: 16px;
+     }
+     nav li {
+         padding: 10px 20px;
+     }
+ }
+ 
+ @media (min-width: 900px) and (max-width: 1200px) {
+     .column {
+         flex: 33.33%;
+     }
+     body {
+         font-size: 14px;
+     }
+     nav li {
+         padding: 8px 16px;
+     }
+ }
+ 
+ @media (min-width: 1200px) {
+     .column {
+         flex: 25%;
+     }
+     body {
+         font-size: 12px;
+     }
+     nav li {
+         padding: 5px 10px;
+     }
+ }
+ 
 
