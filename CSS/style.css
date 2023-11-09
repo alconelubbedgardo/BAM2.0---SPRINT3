@@ -59,7 +59,10 @@ nav a {
 /* Se emplea el ancho máximo del elemento main al 100% y se lo centra. */
 main { 
     max-width: 100%;
-    margin: 0 auto;  
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 /* Se define el estilo general del título de la descripción del perfil profesional. */
@@ -82,6 +85,7 @@ main {
     color: greenyellow;
     font-weight: bold;
     height: 500px;
+    width: 100%;
     overflow: auto; 
 }
 
@@ -90,6 +94,7 @@ main {
     justify-content: center;
     background-color: black;
     height: 500px;
+    width: 100%;
    /*  border:5px solid green; */
 }
 .carousel{
@@ -99,6 +104,7 @@ main {
     width:70vw;
     overflow:hidden;
 }
+
 #gallery-slides{
     display:flex;
 }
@@ -206,7 +212,7 @@ main {
     background: rgb(1, 1, 44);
 }
 
-.contact-form h1{
+.contact-form h2{
     text-align: center;
     padding: 30px;
     background-color: rgb(1, 1, 44);
@@ -298,6 +304,38 @@ textarea:focus {
     input,
     button {
       grid-column: 2 / 3;
+    }
+}
+
+.contact-form, .map-section {
+    width: 50%;
+}
+
+.map-section{
+    text-align: center;
+    background-color: rgb(1, 1, 44);
+    color: yellowgreen;
+}
+
+.map-section h2{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(1, 1, 44);
+    color: yellowgreen;
+}
+
+.map-container iframe {
+    width: 99%; /* Esto hará que el iframe siempre tenga el mismo ancho que su contenedor */
+    height: 50vh; /* Esto hará que el iframe tenga siempre la mitad de la altura de la ventana del navegador */
+}
+
+@media (max-width: 700px) {
+    .contact-form, .map-section {
+        width: 100%; /* Esto hará que ambos elementos ocupen todo el ancho de la pantalla en dispositivos pequeños */
+    }
+
+    .map-container iframe {
+        height: 75vh; /* Esto hará que el iframe tenga el 75% de la altura de la ventana del navegador en pantallas pequeñas */
     }
 }
 
