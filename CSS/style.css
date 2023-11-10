@@ -154,8 +154,7 @@ main {
 /* Estilos para las diapositivas del carrusel de imágenes */
 .slides{
     width:70vw;
-    height:50vh;
-    height: 500px;
+    height:78vh;
 }
 
 /* Estilos para las diapositivas del carrusel de imágenes cuando el usuario pasa el cursor sobre ellas */
