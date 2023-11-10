@@ -15,7 +15,7 @@ var indiceTitulo = 0;
 var indiceDescripcion = 0;
 
 // Velocidad de escritura (5 milisegundos por carácter)
-var velocidad = 5;
+const VELOCIDAD_ESCRITURA = 5;
 
 // Oculta el cursor de la descripción hasta que empiece a escribirse la descripción
 cursorDescripcion.style.display = 'none';
@@ -46,7 +46,7 @@ function escribirTexto(elemento, cursor, contenido, indice, siguienteElemento, s
         // Espera un poco antes de mostrar el siguiente carácter
         setTimeout(function() {
             escribirTexto(elemento, cursor, contenido, indice, siguienteElemento, siguienteCursor, siguienteContenido, siguienteIndice);
-        }, velocidad);
+        }, VELOCIDAD_ESCRITURA);
     } else {
         // Si hay un siguiente elemento y contenido, empieza a escribirlo
         if (siguienteElemento && siguienteContenido) {
@@ -64,3 +64,4 @@ function escribirTexto(elemento, cursor, contenido, indice, siguienteElemento, s
 
 // Llama a la función para empezar la animación del título
 escribirTexto(titulo, cursorTitulo, contenidoTitulo, indiceTitulo, descripcion, cursorDescripcion, contenidoDescripcion, indiceDescripcion);
+
