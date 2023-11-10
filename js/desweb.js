@@ -69,4 +69,4 @@ function dot_click(slideIndex) {
 }
 
 // Inicia la presentación de diapositivas
-setInterval(directRight_click, VELOCIDAD);;
+setInterval(directRight_click, VELOCIDAD);

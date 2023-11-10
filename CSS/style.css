@@ -158,6 +158,31 @@ main {
     height: 500px;
 }
 
+/* Estilos para las diapositivas del carrusel de imágenes cuando el usuario pasa el cursor sobre ellas */
+.slides:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilos para el contenedor de información de la imagen */
+.image-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Muestra la información de la imagen cuando el usuario pasa el cursor sobre el enlace de la imagen */
+.image-link:hover .image-info {
+    opacity: 1;
+}
+
 /* Estilos para los botones de dirección del carrusel de imágenes */
 .direction-container{
     display: flex;
