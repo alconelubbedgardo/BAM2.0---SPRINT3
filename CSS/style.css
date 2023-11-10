@@ -104,7 +104,7 @@ main {
 .carousel{
     display:flex;
     position:relative;
-    width:70vw;
+    width:100%;
     overflow:hidden;
 }
 
