@@ -10,7 +10,7 @@ let pos = 0;
 let gallerySlides = document.getElementById("gallery-slides");
 
 // Se define la velocidad de presentación automática de las diapositivas
-const VELOCIDAD = 2000;
+const VELOCIDAD = 10000;
 
 // Funciones para mover las diapositivas a la izquierda y a la derecha
 function directLeft_click() {

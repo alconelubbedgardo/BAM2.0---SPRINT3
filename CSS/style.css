@@ -165,22 +165,37 @@ main {
 }
 
 /* Estilos para el contenedor de información de la imagen */
-.image-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+.image-link {
+    position: relative;
+    display: inline-block;
 }
 
+.image-link::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    display: none;
+}
+.image-link::after {
+    content: attr(data-desc);
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    display: none;
+}
 /* Muestra la información de la imagen cuando el usuario pasa el cursor sobre el enlace de la imagen */
-.image-link:hover .image-info {
-    opacity: 1;
+.image-link:hover::before,
+.image-link:hover::after {
+    display: block;
 }
 
 /* Estilos para los botones de dirección del carrusel de imágenes */
