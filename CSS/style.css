@@ -82,6 +82,7 @@ main {
     background-color: black;
     padding: 20px;
     margin: 0px;
+    font-size: 16px;
     text-align: center;
     font-family: Consolas, Monaco, monospace;
     color: greenyellow;
