@@ -104,8 +104,9 @@ main {
 .carousel{
     display:flex;
     position:relative;
-    width:100%;
+    width:70%;
     overflow:hidden;
+    margin: auto;
 }
 
 /* Estilos para las diapositivas del carrusel de imágenes */
@@ -154,7 +155,7 @@ main {
 /* Estilos para las diapositivas del carrusel de imágenes */
 .slides{
     width:70vw;
-    height:78vh;
+    height:72vh;
 }
 
 /* Estilos para las diapositivas del carrusel de imágenes cuando el usuario pasa el cursor sobre ellas */

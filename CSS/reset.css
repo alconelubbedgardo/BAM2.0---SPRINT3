@@ -9,6 +9,12 @@ ul,
 li,
 button,
 input,
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 textarea {
     margin: 0;
     padding: 0;
@@ -20,9 +26,10 @@ body {
     line-height: 1.6;
 }
 img {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
 }
+
 ul {
     list-style: none;
 }
