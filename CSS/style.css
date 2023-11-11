@@ -106,6 +106,7 @@ main {
     display:flex;
     position:relative;
     width:70%;
+    height: 100%;
     overflow:hidden;
     margin: auto;
 }
